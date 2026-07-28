@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,follow,noarchive">
+  <title>Schokolade-Notfallcheck für Hunde – kompakte Rechenhilfe</title>
+  <meta name="description" content="Kompakte browserlokale Rechenhilfe für Angaben beim tierärztlichen Anruf nach einer möglichen Schokoladenaufnahme.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="widget-page">
+  <main class="widget-shell">
+    <header class="widget-intro">
+      <p class="eyebrow">Browserlokale Rechenhilfe</p>
+      <h1>Schokolade beim Hund</h1>
+      <p>Gewicht, geschätzte Menge und Schokoladenart für den tierärztlichen Anruf zusammenstellen.</p>
+    </header>
+
+    <aside class="widget-emergency" aria-label="Wichtiger Sicherheitshinweis">
+      <strong>Sofort Praxis oder Notdienst anrufen.</strong>
+      <span>Nicht auf Symptome warten und nicht eigenmächtig Erbrechen auslösen.</span>
+    </aside>
+
+    <div class="calculator widget-calculator" data-calculator>
+      <form class="calculator-form" novalidate>
+        <div class="field">
+          <label for="widget-dog-weight">Gewicht des Hundes</label>
+          <div class="input-unit"><input id="widget-dog-weight" name="weight" type="number" min="0.5" max="120" step="0.1" inputmode="decimal" placeholder="z. B. 12,5" required><span>kg</span></div>
+        </div>
+        <div class="field">
+          <label for="widget-chocolate-amount">Geschätzte Menge</label>
+          <div class="input-unit"><input id="widget-chocolate-amount" name="amount" type="number" min="0.1" max="3000" step="0.1" inputmode="decimal" placeholder="z. B. 40" required><span>g</span></div>
+        </div>
+        <div class="field field--wide">
+          <label for="widget-chocolate-type">Schokoladenart</label>
+          <select id="widget-chocolate-type" name="type" required>
+            <option value="white">Weiße Schokolade</option>
+            <option value="milk">Vollmilchschokolade</option>
+            <option value="dark">Zartbitter / dunkle Schokolade ohne Prozentangabe</option>
+            <option value="percent">Tafel mit bekannter Kakao-Prozentangabe</option>
+            <option value="baking">Backschokolade / ungesüßte Schokolade</option>
+            <option value="powder">Ungesüßtes Kakaopulver</option>
+            <option value="unknown">Unbekanntes oder Mischprodukt</option>
+          </select>
+        </div>
+        <div class="field" data-percent-field hidden>
+          <label for="widget-cocoa-percent">Kakaoanteil</label>
+          <div class="input-unit"><input id="widget-cocoa-percent" name="percent" type="number" min="1" max="100" step="1" inputmode="decimal" placeholder="z. B. 70"><span>%</span></div>
+        </div>
+        <div class="field">
+          <label for="widget-time-since">Zeit seit der Aufnahme</label>
+          <select id="widget-time-since" name="time">
+            <option>unter 2 Stunden</option>
+            <option>2 bis 6 Stunden</option>
+            <option>mehr als 6 Stunden</option>
+            <option>unbekannt</option>
+          </select>
+        </div>
+        <button class="calculate" type="submit">Schätzung erstellen</button>
+        <p class="form-error" data-error role="alert" hidden></p>
+      </form>
+
+      <section class="result" data-result aria-live="polite" hidden>
+        <div class="result-top">
+          <div>
+            <p class="result-label">Rechenergebnis</p>
+            <h2 data-result-heading>Angaben berechnet</h2>
+          </div>
+          <strong class="dose" data-dose></strong>
+        </div>
+        <p data-explanation></p>
+        <div class="result-warning">Diese Schätzung ist keine Diagnose und keine Entwarnung. Ruf jetzt eine Tierarztpraxis oder den tierärztlichen Notdienst an.</div>
+        <label for="widget-call-summary">Notiz für den tierärztlichen Anruf</label>
+        <textarea id="widget-call-summary" data-summary readonly></textarea>
+        <div class="result-actions">
+          <button type="button" data-copy>Notiz kopieren</button>
+          <button class="secondary" type="button" data-reset>Neue Angaben</button>
+        </div>
+        <p class="copy-status" data-copy-status role="status"></p>
+      </section>
+    </div>
+
+    <footer class="widget-attribution">
+      <p><strong>0 Uploads:</strong> Eingaben und Ergebnis bleiben in diesem Browser.</p>
+      <a href="https://hello-hund.de/schokolade-hund-notfallcheck/?utm_source=embedded_widget&amp;utm_medium=referral&amp;utm_campaign=schokolade_notfallcheck&amp;utm_content=widget_footer" target="_blank">Methodik, Grenzen und Quellen bei Hello Hund</a>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

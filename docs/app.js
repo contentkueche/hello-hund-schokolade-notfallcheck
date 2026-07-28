@@ -26,6 +26,9 @@
   var explanation = root.querySelector("[data-explanation]");
   var summary = root.querySelector("[data-summary]");
   var copyStatus = root.querySelector("[data-copy-status]");
+  var embedCode = document.querySelector("[data-embed-code]");
+  var embedCopyButton = document.querySelector("[data-copy-embed]");
+  var embedCopyStatus = document.querySelector("[data-embed-copy-status]");
 
   function parseNumber(value) {
     return Number(String(value || "").replace(",", "."));
@@ -153,4 +156,26 @@
     copyStatus.textContent = "";
     weightInput.focus();
   });
+
+  if (embedCode && embedCopyButton && embedCopyStatus) {
+    embedCopyButton.addEventListener("click", function () {
+      var value = embedCode.value;
+      function done(message) {
+        embedCopyStatus.textContent = message;
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(value).then(function () {
+          done("Der Einbettcode wurde kopiert.");
+        }).catch(function () {
+          embedCode.focus();
+          embedCode.select();
+          done("Der Einbettcode ist markiert und kann kopiert werden.");
+        });
+      } else {
+        embedCode.focus();
+        embedCode.select();
+        done("Der Einbettcode ist markiert und kann kopiert werden.");
+      }
+    });
+  }
 })();

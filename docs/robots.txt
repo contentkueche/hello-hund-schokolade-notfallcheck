@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /hello-hund-schokolade-notfallcheck/widget.html
 Sitemap: https://contentkueche.github.io/hello-hund-schokolade-notfallcheck/sitemap.xml

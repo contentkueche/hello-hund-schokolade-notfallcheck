@@ -4,7 +4,7 @@ message: Bitte zitieren Sie diese Software und Dokumentation mit den folgenden A
 type: software
 authors:
   - name: Hello Hund Redaktion
-version: 1.0.0
+version: 1.1.0
 date-released: 2026-07-29
 url: https://hello-hund.de/schokolade-hund-notfallcheck/
 repository-code: https://github.com/contentkueche/hello-hund-schokolade-notfallcheck

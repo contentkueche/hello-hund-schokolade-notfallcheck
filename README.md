@@ -58,9 +58,22 @@ Beim normalen Abruf über GitHub Pages fallen die technisch notwendigen Verbindu
 
 ## Zitierhinweis
 
-> Hello Hund Redaktion (2026): Schokolade-Notfallcheck für Hunde, Version 1.0.0. Datenstand 28. Juli 2026.
+> Hello Hund Redaktion (2026): Schokolade-Notfallcheck für Hunde, Version 1.1.0. Datenstand 28. Juli 2026.
 
 Maschinenlesbare Angaben stehen in [`CITATION.cff`](CITATION.cff) und [`codemeta.json`](codemeta.json).
+
+## Kostenlos einbetten
+
+Die kompakte Fassung unter [`widget.html`](https://contentkueche.github.io/hello-hund-schokolade-notfallcheck/widget.html) kann in redaktionelle Ratgeber, Praxis- und Vereinsseiten eingebettet werden. Sie ist `noindex`, werbefrei und verwendet dieselbe browserlokale Rechenlogik wie die ausführliche Anwendung.
+
+Der vollständige Einbettcode steht auf der [öffentlichen Projektseite](https://contentkueche.github.io/hello-hund-schokolade-notfallcheck/#einbetten). Er enthält:
+
+- die kompakte Rechenhilfe;
+- einen sichtbaren Hinweis auf den sofortigen tierärztlichen Anruf;
+- einen sichtbaren Quellenhinweis auf Hello Hund;
+- keine Analyse-, Werbe- oder Drittanbieter-Skripte.
+
+Bitte Sicherheits- und Quellenhinweis unverändert übernehmen. Die Einbettung ersetzt keine tierärztliche Beratung.
 
 ## Lizenz
 

@@ -15,7 +15,7 @@
     "name": "Schokolade-Notfallcheck für Hunde",
     "applicationCategory": "HealthApplication",
     "operatingSystem": "Web browser",
-    "softwareVersion": "1.0.0",
+    "softwareVersion": "1.1.0",
     "description": "Browserbasierte Rechenhilfe für den tierärztlichen Anruf nach einer möglichen Schokoladenaufnahme beim Hund.",
     "url": "https://contentkueche.github.io/hello-hund-schokolade-notfallcheck/",
     "codeRepository": "https://github.com/contentkueche/hello-hund-schokolade-notfallcheck",
@@ -39,6 +39,7 @@
     <a class="brand" href="https://hello-hund.de/?utm_source=github_pages&amp;utm_medium=foundation&amp;utm_campaign=schokolade_notfallcheck">Hello Hund</a>
     <nav aria-label="Seitennavigation">
       <a href="#rechner">Rechner</a>
+      <a href="#einbetten">Einbetten</a>
       <a href="#methodik">Methodik</a>
       <a href="#quellen">Quellen</a>
     </nav>
@@ -101,7 +102,7 @@
               <option value="percent">Tafel mit bekannter Kakao-Prozentangabe</option>
               <option value="baking">Backschokolade / ungesüßte Schokolade</option>
               <option value="powder">Ungesüßtes Kakaopulver</option>
-              <option value="unknown">Unbekanntes Produkt, Praline, Kuchen oder Mischung</option>
+              <option value="unknown">Unbekanntes oder Mischprodukt</option>
             </select>
           </div>
           <div class="field" data-percent-field hidden>
@@ -139,6 +140,55 @@
           </div>
           <p class="copy-status" data-copy-status role="status"></p>
         </section>
+      </div>
+    </section>
+
+    <section class="section embed-section" id="einbetten">
+      <div class="embed-layout">
+        <div class="embed-copy">
+          <p class="eyebrow">Kostenlos einbettbar</p>
+          <h2>Die Rechenhilfe im eigenen Ratgeber nutzen</h2>
+          <p class="section-intro">Redaktionelle Seiten, Tierarztpraxen und Tierschutzvereine können die kompakte Fassung kostenlos einbinden. Die Berechnung bleibt im Browser der lesenden Person; es werden keine Eingaben an Hello Hund übertragen.</p>
+          <ul class="embed-benefits">
+            <li>ohne Werbung, Cookies und Analyse-Skripte</li>
+            <li>mit denselben offengelegten Literaturwerten</li>
+            <li>mit dauerhaft sichtbarem Sicherheits- und Quellenhinweis</li>
+          </ul>
+          <p>Der Einbettcode ergänzt bewusst einen sichtbaren Quellenhinweis und den Hinweis auf den sofortigen tierärztlichen Anruf. Bitte beides unverändert übernehmen.</p>
+        </div>
+
+        <div class="embed-code-panel">
+          <label for="embed-code">Einbettcode</label>
+          <textarea id="embed-code" data-embed-code readonly spellcheck="false">&lt;div class="hello-hund-schokolade-widget"&gt;
+  &lt;iframe
+    src="https://contentkueche.github.io/hello-hund-schokolade-notfallcheck/widget.html"
+    title="Schokolade-Notfallcheck für Hunde"
+    loading="lazy"
+    width="100%"
+    height="980"
+    sandbox="allow-scripts"
+    style="display:block;max-width:760px;border:0;"
+  &gt;&lt;/iframe&gt;
+  &lt;p style="max-width:760px;font:14px/1.5 system-ui,sans-serif;"&gt;
+    Rechenhilfe von
+    &lt;a href="https://hello-hund.de/schokolade-hund-notfallcheck/?utm_source=embedded_widget&amp;amp;utm_medium=referral&amp;amp;utm_campaign=schokolade_notfallcheck&amp;amp;utm_content=attribution"&gt;Hello Hund Redaktion&lt;/a&gt;.
+    Keine tierärztliche Beratung. Nach einer möglichen Aufnahme sofort Praxis oder Notdienst kontaktieren.
+  &lt;/p&gt;
+&lt;/div&gt;</textarea>
+          <button class="calculate embed-copy-button" type="button" data-copy-embed>Einbettcode kopieren</button>
+          <p class="copy-status" data-embed-copy-status role="status"></p>
+        </div>
+      </div>
+
+      <div class="embed-preview">
+        <div class="embed-preview-head">
+          <p class="eyebrow">Vorschau</p>
+          <p>Die kompakte Fassung ist eigenständig bedienbar und verweist transparent auf Methodik, Grenzen und Quellen.</p>
+        </div>
+        <a class="embed-preview-link" href="widget.html" aria-label="Kompakte Rechenhilfe öffnen">
+          <img src="assets/schokolade-widget-preview-1280x800.png" width="1280" height="800" alt="Kompakte Schokolade-Rechenhilfe mit Sicherheitshinweis, Eingabefeldern und Schätzbutton">
+        </a>
+        <a class="button embed-preview-button" href="widget.html">Kompakte Fassung öffnen</a>
       </div>
     </section>
 
@@ -210,7 +260,7 @@
       </div>
       <div class="open-panel">
         <div>
-          <p class="eyebrow">Version 1.0.0</p>
+          <p class="eyebrow">Version 1.1.0</p>
           <h3>Offen dokumentiert und zitierbar</h3>
           <p>Quellcode, Datenschutz, Lizenz, CITATION.cff und CodeMeta sind öffentlich. Die ausführliche Hello-Hund-Fassung ergänzt Notfallzettel, Einordnung und weitere Sicherheitsinformationen.</p>
         </div>

@@ -12,6 +12,8 @@ Beim Laden der öffentlichen GitHub-Pages-Seite ruft der Browser statische HTML-
 
 Die Anwendung setzt keine Cookies und lädt keine Analyse-, Werbe- oder Drittanbieter-Skripte. Sie verwendet keine Formulare mit Serverübertragung und keine Browser-Speicher.
 
+Die kompakte Einbettfassung unter `widget.html` verarbeitet dieselben Angaben ausschließlich im Browser. Auch beim Einbetten werden keine Eingaben, Ergebnisse oder Interaktionen an Hello Hund übertragen. Der Abruf der statischen Dateien erzeugt lediglich die technisch notwendigen Verbindungsdaten beim Hostinganbieter.
+
 ## Verantwortliche Information
 
 Die aktuelle Datenschutzerklärung von Hello Hund ist unter https://hello-hund.de/datenschutzerklaerung/ erreichbar.
