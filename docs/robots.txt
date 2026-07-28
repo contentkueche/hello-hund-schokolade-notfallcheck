@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://contentkueche.github.io/hello-hund-schokolade-notfallcheck/sitemap.xml

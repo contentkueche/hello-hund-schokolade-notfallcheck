@@ -1,0 +1,29 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "Schokolade-Notfallcheck für Hunde",
+  "description": "Browserbasierte Rechenhilfe für den tierärztlichen Anruf nach einer möglichen Schokoladenaufnahme beim Hund.",
+  "version": "1.0.0",
+  "datePublished": "2026-07-29",
+  "codeRepository": "https://github.com/contentkueche/hello-hund-schokolade-notfallcheck",
+  "license": "https://spdx.org/licenses/MIT",
+  "author": {
+    "@type": "Organization",
+    "name": "Hello Hund Redaktion",
+    "url": "https://hello-hund.de/"
+  },
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Web browser",
+  "programmingLanguage": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "isBasedOn": [
+    "https://www.merckvetmanual.com/toxicology/food-hazards/chocolate-toxicosis-in-animals",
+    "https://hello-hund.de/schokolade-hund-notfallcheck/"
+  ],
+  "sameAs": [
+    "https://contentkueche.github.io/hello-hund-schokolade-notfallcheck/"
+  ]
+}

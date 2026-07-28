@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <title>Schokolade-Notfallcheck für Hunde – offene Rechenhilfe</title>
+  <meta name="description" content="Schokoladenmenge anhand offengelegter Literaturwerte einordnen und Angaben für den tierärztlichen Anruf zusammenstellen. Browserlokal und ohne Datenspeicherung.">
+  <link rel="canonical" href="https://contentkueche.github.io/hello-hund-schokolade-notfallcheck/">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Schokolade-Notfallcheck für Hunde",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Web browser",
+    "softwareVersion": "1.0.0",
+    "description": "Browserbasierte Rechenhilfe für den tierärztlichen Anruf nach einer möglichen Schokoladenaufnahme beim Hund.",
+    "url": "https://contentkueche.github.io/hello-hund-schokolade-notfallcheck/",
+    "codeRepository": "https://github.com/contentkueche/hello-hund-schokolade-notfallcheck",
+    "license": "https://github.com/contentkueche/hello-hund-schokolade-notfallcheck/blob/main/LICENSE",
+    "isBasedOn": "https://www.merckvetmanual.com/toxicology/food-hazards/chocolate-toxicosis-in-animals",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hello Hund Redaktion",
+      "url": "https://hello-hund.de/"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="https://hello-hund.de/?utm_source=github_pages&amp;utm_medium=foundation&amp;utm_campaign=schokolade_notfallcheck">Hello Hund</a>
+    <nav aria-label="Seitennavigation">
+      <a href="#rechner">Rechner</a>
+      <a href="#methodik">Methodik</a>
+      <a href="#quellen">Quellen</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Offen · browserlokal · ohne Werbung</p>
+        <h1>Schokolade beim Hund nachvollziehbar einordnen</h1>
+        <p class="lede">Die Rechenhilfe verbindet Gewicht, Menge und Schokoladenart mit offengelegten Literaturwerten. Sie bereitet Angaben für das tierärztliche Gespräch vor – und ersetzt dieses Gespräch ausdrücklich nicht.</p>
+        <div class="actions">
+          <a class="button" href="#rechner">Angaben berechnen</a>
+          <a class="button button--ghost" href="https://hello-hund.de/schokolade-hund-notfallcheck/?utm_source=github_pages&amp;utm_medium=foundation&amp;utm_campaign=schokolade_notfallcheck&amp;utm_content=hero">Vollständigen Notfallcheck öffnen</a>
+        </div>
+      </div>
+      <aside class="urgent" aria-label="Wichtiger Sicherheitshinweis">
+        <p class="urgent-label">Jetzt handeln</p>
+        <h2>Nach einer Aufnahme sofort anrufen</h2>
+        <p>Kontaktiere eine Tierarztpraxis oder den tierärztlichen Notdienst. Warte nicht auf Symptome und löse nicht eigenmächtig Erbrechen aus.</p>
+        <ul>
+          <li>Verpackung bereithalten</li>
+          <li>geschätzte Menge notieren</li>
+          <li>Gewicht und Zeitpunkt nennen</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="facts" aria-label="Eigenschaften der Rechenhilfe">
+      <div><strong>0 Uploads</strong><span>Eingaben bleiben im Browser</span></div>
+      <div><strong>6 Rechenpfade</strong><span>mit offengelegten Werten</span></div>
+      <div><strong>Keine Entwarnung</strong><span>Anruf hat immer Vorrang</span></div>
+    </section>
+
+    <section class="section section--tool" id="rechner">
+      <header class="section-head">
+        <div>
+          <p class="eyebrow">Rechenhilfe</p>
+          <h2>Angaben für den Anruf strukturieren</h2>
+        </div>
+        <p>Nutze im Zweifel die höhere geschätzte Menge. Unbekannte Mischprodukte werden nicht geraten. Der konkrete Produktgehalt kann von den Literaturwerten abweichen.</p>
+      </header>
+
+      <div class="calculator" data-calculator>
+        <form class="calculator-form" novalidate>
+          <div class="field">
+            <label for="dog-weight">Gewicht des Hundes</label>
+            <div class="input-unit"><input id="dog-weight" name="weight" type="number" min="0.5" max="120" step="0.1" inputmode="decimal" placeholder="z. B. 12,5" required><span>kg</span></div>
+          </div>
+          <div class="field">
+            <label for="chocolate-amount">Geschätzte Menge</label>
+            <div class="input-unit"><input id="chocolate-amount" name="amount" type="number" min="0.1" max="3000" step="0.1" inputmode="decimal" placeholder="z. B. 40" required><span>g</span></div>
+          </div>
+          <div class="field field--wide">
+            <label for="chocolate-type">Schokoladenart</label>
+            <select id="chocolate-type" name="type" required>
+              <option value="white">Weiße Schokolade</option>
+              <option value="milk">Vollmilchschokolade</option>
+              <option value="dark">Zartbitter / dunkle Schokolade ohne Prozentangabe</option>
+              <option value="percent">Tafel mit bekannter Kakao-Prozentangabe</option>
+              <option value="baking">Backschokolade / ungesüßte Schokolade</option>
+              <option value="powder">Ungesüßtes Kakaopulver</option>
+              <option value="unknown">Unbekanntes Produkt, Praline, Kuchen oder Mischung</option>
+            </select>
+          </div>
+          <div class="field" data-percent-field hidden>
+            <label for="cocoa-percent">Kakaoanteil</label>
+            <div class="input-unit"><input id="cocoa-percent" name="percent" type="number" min="1" max="100" step="1" inputmode="decimal" placeholder="z. B. 70"><span>%</span></div>
+          </div>
+          <div class="field">
+            <label for="time-since">Zeit seit der Aufnahme</label>
+            <select id="time-since" name="time">
+              <option>unter 2 Stunden</option>
+              <option>2 bis 6 Stunden</option>
+              <option>mehr als 6 Stunden</option>
+              <option>unbekannt</option>
+            </select>
+          </div>
+          <button class="calculate" type="submit">Schätzung erstellen</button>
+          <p class="form-error" data-error role="alert" hidden></p>
+        </form>
+
+        <section class="result" data-result aria-live="polite" hidden>
+          <div class="result-top">
+            <div>
+              <p class="result-label">Rechenergebnis</p>
+              <h3 data-result-heading>Angaben berechnet</h3>
+            </div>
+            <strong class="dose" data-dose></strong>
+          </div>
+          <p data-explanation></p>
+          <div class="result-warning">Diese Schätzung ist keine Diagnose und keine Entwarnung. Ruf jetzt eine Tierarztpraxis oder den tierärztlichen Notdienst an.</div>
+          <label for="call-summary">Notiz für den tierärztlichen Anruf</label>
+          <textarea id="call-summary" data-summary readonly></textarea>
+          <div class="result-actions">
+            <button type="button" data-copy>Notiz kopieren</button>
+            <button class="secondary" type="button" data-reset>Neue Angaben</button>
+          </div>
+          <p class="copy-status" data-copy-status role="status"></p>
+        </section>
+      </div>
+    </section>
+
+    <section class="section" id="methodik">
+      <p class="eyebrow">Offengelegte Rechenlogik</p>
+      <h2>Eine Formel, sichtbare Annahmen</h2>
+      <p class="section-intro">Geschätzte Grammzahl × Literaturwert in mg/g ÷ Körpergewicht in kg. Die Anwendung interpretiert das Ergebnis nicht als persönlichen Grenzwert.</p>
+      <div class="method-grid">
+        <article>
+          <span>01</span>
+          <h3>Menge schätzen</h3>
+          <p>Fehlende Grammzahl anhand von Verpackungsgröße und Restmenge möglichst realistisch bestimmen.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Produktwert zuordnen</h3>
+          <p>Den veröffentlichten Orientierungswert der Schokoladenart verwenden. Bei dunkler Schokolade ohne Prozentangabe wird eine Spanne ausgegeben.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Auf Gewicht beziehen</h3>
+          <p>Die geschätzte Gesamtmenge durch das Körpergewicht teilen und als mg/kg für das Gespräch notieren.</p>
+        </article>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Produkt</th><th>Orientierungswert</th><th>Grenze</th></tr></thead>
+          <tbody>
+            <tr><td>Weiße Schokolade</td><td>0,04 mg/g</td><td>Weitere Zutaten und hoher Fettgehalt bleiben gesondert relevant.</td></tr>
+            <tr><td>Vollmilchschokolade</td><td>2,3 mg/g</td><td>Produktwerte können abweichen.</td></tr>
+            <tr><td>Dunkle Schokolade</td><td>5,3–5,6 mg/g</td><td>Spanne für süße bis halbsüße dunkle Schokolade.</td></tr>
+            <tr><td>Tafel mit Prozentangabe</td><td>Kakaoanteil × 15,5 mg/g</td><td>Näherung, kein Messwert der konkreten Tafel.</td></tr>
+            <tr><td>Ungesüßte Backschokolade</td><td>15,5 mg/g</td><td>Deutlich konzentrierter als Vollmilchschokolade.</td></tr>
+            <tr><td>Ungesüßtes Kakaopulver</td><td>28,5 mg/g</td><td>Höchster hier verwendeter Tabellenwert.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section section--dark">
+      <div>
+        <p class="eyebrow eyebrow--gold">Klare Sicherheitsgrenzen</p>
+        <h2>Was die Anwendung bewusst nicht tut</h2>
+      </div>
+      <ul class="boundaries">
+        <li>keine Diagnose oder individuelle Risikobewertung</li>
+        <li>keine Entwarnung unterhalb eines Zahlenwerts</li>
+        <li>keine Dosierung oder Behandlungsempfehlung</li>
+        <li>keine Schätzung für unbekannte Mischprodukte</li>
+        <li>keine Speicherung oder Übertragung der Eingaben</li>
+        <li>keine Werbung oder Produktlinks</li>
+      </ul>
+    </section>
+
+    <section class="section" id="quellen">
+      <div class="source-layout">
+        <div>
+          <p class="eyebrow">Quellenstand 28. Juli 2026</p>
+          <h2>Fachquellen direkt nachprüfen</h2>
+          <p>Rechenwerte stammen aus dem Merck Veterinary Manual. Handlungs- und Sicherheitsgrenzen wurden mit Cornell, VCA und der Bundestierärztekammer abgeglichen.</p>
+        </div>
+        <ol class="source-list">
+          <li><a href="https://www.merckvetmanual.com/toxicology/food-hazards/chocolate-toxicosis-in-animals">Merck Veterinary Manual: Chocolate Toxicosis in Animals</a></li>
+          <li><a href="https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/chocolate-toxicity-what-should-i-do-if-my-dog-eats-chocolate">Cornell Canine Health Center: Chocolate toxicity</a></li>
+          <li><a href="https://vcahospitals.com/know-your-pet/chocolate-poisoning-in-dogs">VCA Animal Hospitals: Chocolate Poisoning in Dogs</a></li>
+          <li><a href="https://www.bundestieraerztekammer.de/presse/archiv/2012/PM30_2012_VergiftungbeimHund.pdf">Bundestierärztekammer: Vergiftungen beim Hund</a></li>
+        </ol>
+      </div>
+      <div class="open-panel">
+        <div>
+          <p class="eyebrow">Version 1.0.0</p>
+          <h3>Offen dokumentiert und zitierbar</h3>
+          <p>Quellcode, Datenschutz, Lizenz, CITATION.cff und CodeMeta sind öffentlich. Die ausführliche Hello-Hund-Fassung ergänzt Notfallzettel, Einordnung und weitere Sicherheitsinformationen.</p>
+        </div>
+        <div class="actions">
+          <a class="button" href="https://github.com/contentkueche/hello-hund-schokolade-notfallcheck">Quellcode ansehen</a>
+          <a class="button button--ghost" href="https://hello-hund.de/schokolade-hund-notfallcheck/?utm_source=github_pages&amp;utm_medium=foundation&amp;utm_campaign=schokolade_notfallcheck&amp;utm_content=method">Ausführliche Fassung öffnen</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong>Hello Hund Redaktion</strong>
+    <p>Diese offene Rechenhilfe ersetzt keine tierärztliche Beratung. Nach einer möglichen Aufnahme sofort Praxis oder Notdienst kontaktieren.</p>
+    <p><a href="https://github.com/contentkueche/hello-hund-schokolade-notfallcheck/blob/main/PRIVACY.md">Datenschutz</a> · <a href="https://github.com/contentkueche/hello-hund-schokolade-notfallcheck/blob/main/LICENSE">MIT-Lizenz</a></p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

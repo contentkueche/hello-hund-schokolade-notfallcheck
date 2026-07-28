@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: Schokolade-Notfallcheck für Hunde
+message: Bitte zitieren Sie diese Software und Dokumentation mit den folgenden Angaben.
+type: software
+authors:
+  - name: Hello Hund Redaktion
+version: 1.0.0
+date-released: 2026-07-29
+url: https://hello-hund.de/schokolade-hund-notfallcheck/
+repository-code: https://github.com/contentkueche/hello-hund-schokolade-notfallcheck
+license: MIT
+abstract: Browserbasierte Rechenhilfe für den tierärztlichen Anruf nach einer möglichen Schokoladenaufnahme beim Hund mit offengelegten Literaturwerten und strikten Sicherheitsgrenzen.
+keywords:
+  - Hund
+  - Schokolade
+  - Methylxanthine
+  - Tiermedizin
+  - Rechenhilfe
